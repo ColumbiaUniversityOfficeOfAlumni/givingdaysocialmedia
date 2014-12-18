@@ -1,0 +1,250 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+/* Box sizing is the worst */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Image replacement, from http://nicolasgallagher.com/another-css-image-replacement-technique/ */
+.ir {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* Micro clearfix via Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+body {
+  color: #fff;
+  font-family: Roboto, sans;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: solid 1px transparent;
+}
+
+a:hover {
+  border-bottom: solid 1px #fff;
+  color: inherit;
+}
+
+h1.ir {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181758/2014cgd.png");
+  width: auto;
+  height: 234px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header h2 {
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+header {
+  background-color: #005dab;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #005daa;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
+}
+
+.button {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 7px 25px;
+  margin: 15px 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.button:hover {
+  border-bottom: solid 1px transparent;
+  font-style: normal;
+}
+
+.button.readmore {
+  background-color: #ccc;
+  color: #000;
+  margin-bottom: 0.25em;
+}
+
+.button.tagboard {
+  background-color: #00addd;
+}
+
+.button.website {
+  background-color: #6cadde;
+}
+
+.button.readmore:hover {
+  background-color: #999;
+}
+
+.button.tagboard:hover {
+  background-color: #065770;
+}
+
+.button.website:hover {
+  background-color: #5182a7;
+}
+
+section.cf {
+  padding: 50px 0;
+}
+
+section h3 {
+  text-transform: uppercase;
+  padding-left: 50px;
+  position: relative;
+  margin: 0;
+  color: #fff;
+}
+
+section h3:before {
+  content: "";
+  border-radius: 3px;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  left: 0;
+}
+
+section.fb h3:before {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181758/cgd_fb.png");
+}
+
+section.tw h3:before {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181758/cgd_tw.png");
+}
+
+section.in h3:before {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181758/cgd_in.png");
+}
+
+section h4 {
+  font-weight: 300;
+  font-size: 32px;
+  margin: .5em 0;
+  color: #fff;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+.tw {
+  background-color: #55acee;
+}
+
+.in {
+  background-color: #3f729b;
+}
+
+.slick-facebook, .slick-twitter, .slick-instagram {
+  width: 522px;
+  margin-right: 20px;
+}
+
+.content {
+  width: 418px;
+  font-size: 18px;
+}
+
+.stats.cf {
+  background-color: #eee;
+  color: #444;
+  padding: 30px 0 40px;
+}
+
+.stats .container > div {
+  float: left;
+  width: 240px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.stats p {
+  margin: 0;
+}
+
+/* Slick customization */
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: white;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+/* modal customization */
+#creditsModal {
+  color: #000;
+}
+#creditsModal h2 {
+  text-transform: none;
+}
+#creditsModal h3 a {
+  color: #000;
+}
+#creditsModal ul {
+  float: left;
+  width: 50%;
+  padding-right: 5%;
+}
